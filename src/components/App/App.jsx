@@ -6,16 +6,16 @@ import Projects from "./../Projects/Projects";
 import Skills from "./../Skills/Skills";
 import Contact from "./../Contact/Contact";
 
-import "./App.css";
+import "./App.css"; 
 
 const App = () =>  {
 	return (
 		<div>
 		<BrowserRouter>
 			<div>
-				<Route path="/" component={Home} />
+				<Route path="/" exact component={Home} />
 				<Route path="/about" component={About} />
-				<Route path="/projects" component={Projects} />
+				<Route path="/projects" component={Projects} /> 
 				<Route path="/skills" component={Skills} />
 				<Route path="/contact" component={Contact} />
 
