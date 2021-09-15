@@ -7,10 +7,17 @@ import homeAnime from "./../../assets/home_anime.gif";
 import "./Home.css";
 
 class Home extends Component {
+	state = {showModal : false};
+
+	componentDidMount() {
+		setTimeout(() => {
+			this.setState({showModal: true});
+		},2400)
+	}
 	render() {
 		return (
 			<div className="home-container">
-				<Modal />
+				{this.state.showModal && <Modal />}				
 				<div className="header-text">
 					<h1>Welcome to my portfolio!</h1>
 					<p>This is Manav, a web developer</p>
