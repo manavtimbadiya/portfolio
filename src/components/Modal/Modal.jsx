@@ -2,14 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./Modal.css";
 
-const Modal = (props) => {
+const Modal = ({closeModal}) => {
 	return (
         ReactDOM.createPortal( 
-        <div className="modal-overlay">
-            <div className="modal-container">
+        <div onClick={closeModal} className="modal-overlay">
+            <div 
+                 onClick={(e) => e.stopPropagation()}
+                 className="modal-container"
+                 >
                  <div className='upper-section'>
                     <h1>Huge Annoucement!</h1>
-                    <p  className='close'>
+                    <p onClick={closeModal} className='close'>
                         &times;
                     </p>
                 </div>
@@ -23,7 +26,9 @@ const Modal = (props) => {
                     
                 </div>
                  <div className='lower-section'>
-                    <a  className='modal-btn btn-red'>
+                    <a  
+                        onClick={closeModal}
+                        className='modal-btn btn-red'>
                         Close
                     </a>
                     <a

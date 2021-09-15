@@ -25,9 +25,9 @@
     height: auto;
 }
 
-upper-section {
+.upper-section {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     padding: 10px 0;
     justify-content: space-between;
 }
@@ -93,4 +93,4 @@ upper-section {
 .btn-red:hover,
 .btn-red:focus {
     background-color: #c0392b;
-}
+}   

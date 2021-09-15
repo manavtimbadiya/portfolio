@@ -12,12 +12,16 @@ class Home extends Component {
 	componentDidMount() {
 		setTimeout(() => {
 			this.setState({showModal: true});
-		},2400)
+		},1000)
+	}
+
+	closeModal = () => {
+		this.setState({showModal:false});
 	}
 	render() {
 		return (
 			<div className="home-container">
-				{this.state.showModal && <Modal />}				
+				{this.state.showModal && <Modal closeModal={this.closeModal}/>}				
 				<div className="header-text">
 					<h1>Welcome to my portfolio!</h1>
 					<p>This is Manav, a web developer</p>
