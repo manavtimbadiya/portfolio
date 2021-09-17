@@ -31,6 +31,5 @@ select:focus{
 @media only screen and (max-width:  640px){
 	.section-container{
 		padding: 100px 0;
-		
 	}
 }
