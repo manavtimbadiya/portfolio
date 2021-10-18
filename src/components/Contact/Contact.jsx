@@ -1,10 +1,57 @@
 import React from "react";
+import Header from "../Header/Header";
+import FooterLink from '../FooterLink/FooterLink';
 import "./Contact.css";
+import contactVector from './../../assets/contact_anime.png';
+import github from './../../assets/gh.png';
+import linkedin from './../../assets/li.png';
+import instagram from './../../assets/in.png';
+/*import medium from './../../assets/me.png'; */
+import web from './../../assets/web.png';
+
 
 const Contact = () => {
 	return (
 		<div className="section-container">
-			<h1>This is the Contact page!</h1>
+			<Header heading="Get in touch"
+			details='Interested to collaborate? Feel free to drop me an email.'
+            />
+
+            {/* Social icons */}
+            <div className='social-icons-container'>
+                <a href='https://github.com/manavtimbadiya' className='social-icon'>
+                    <img src={github} alt='social' />
+                </a>
+                <a
+                    href='https://linkedin.com/in/manavtimbadiya'
+                    className='social-icon'
+                >
+                    <img src={linkedin} alt='social' />
+                </a>
+                <a
+                    href='https://instagram.com/manav_patel__9'
+                    className='social-icon'
+                >
+                    <img src={instagram} alt='social' />
+                </a>
+                <a href='https://madhavbahl.tech' className='social-icon'>
+                    <img src={web} alt='social' />
+                </a>
+            </div>
+
+             <FooterLink
+                phrase='Read more '
+                toAddress="/about"
+                link='about me.'
+            />
+
+             <div className='vector-frame'>
+                <img
+                    src={contactVector}
+                    alt='vector'
+                    className='about-vector'
+                />
+            </div>
 		</div>
 		);
 };
