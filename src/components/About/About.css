@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     padding: 60px 80px 80px 80px;
 }
+
 .about-left,
 .about-right {
     width: 50%;
@@ -19,7 +20,12 @@
     flex-direction: column;
     justify-content: center;
 }
-.about-sub{
+
+.about-link-element {
+    color: #000;
+}
+
+.about-sub-head {
     margin: 0;
 }
 
@@ -52,7 +58,7 @@
         width: 90%;
     }
 
-     .about-head {
+    .about-head {
         width: 80%;
     }
 
@@ -65,8 +71,8 @@
         padding: 50px 32px;
     }
 
-    .about-main-left,
-    .about-main-right {
+    .about-left,
+    .about-right {
         width: 100%;
     }
 }
