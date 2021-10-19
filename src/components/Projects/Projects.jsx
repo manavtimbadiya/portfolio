@@ -21,7 +21,6 @@ const Projects = () =>
                         projectName,
                         projectDescription,
                         imageUrl,
-                        videoUrl,
                         projectUrl,
                     }) => {
                         return <ProjectCard 
@@ -29,7 +28,7 @@ const Projects = () =>
                                 projectDescription={projectDescription}
                                 projectUrl={projectUrl}
                                 imageUrl={imageUrl}
-                                videoUrl={videoUrl}
+                                
                          />
                     })
                  }
