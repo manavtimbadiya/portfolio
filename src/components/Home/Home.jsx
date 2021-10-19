@@ -9,11 +9,11 @@ import "./Home.css";
 class Home extends Component {
 	state = {showModal : false};
 
-	componentDidMount() {
+/*	componentDidMount() {
 		setTimeout(() => {
 			this.setState({showModal: true});
 		},1000)
-	}
+	}  */
 
 	closeModal = () => {
 		this.setState({showModal:false});
