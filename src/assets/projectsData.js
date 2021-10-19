@@ -40,7 +40,7 @@ export const projectsData = [
         projectDescription:
             'As a developer/designer, you should definitely have your own portfolio website. There are endless benefits. But, a lot of people feel that it would be tough to make one. So here I bring you a tutorial to make your own website.',
         imageUrl: 'https://madhavbahl.tech/portfolio-assets/proj5.PNG',
-        videoUrl: 'http://theleanprogrammer.com/aam',
+        /*videoUrl: 'http://theleanprogrammer.com/aam',*/
         projectUrl: 'http://madhavbahl.tech/portfolio/',
     },
 ];
